@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import HEXService from "../../services/HEXServices";
+import HEXService from "../../../services/HEXServices";
 import { Paper } from "@mui/material";
 
 const CompareSheet = ({ values }) => {
