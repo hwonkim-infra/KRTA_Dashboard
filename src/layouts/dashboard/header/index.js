@@ -71,7 +71,7 @@ export default function Header({ onOpenNav }) {
         ))}
       </Stack>
 
-        <Stack
+        {/* <Stack
           direction="row"
           alignItems="center"
           spacing={{
@@ -82,7 +82,7 @@ export default function Header({ onOpenNav }) {
           <LanguagePopover />
           <NotificationsPopover />
           <AccountPopover />
-        </Stack>
+        </Stack> */}
       </StyledToolbar>
     </StyledRoot>
   );

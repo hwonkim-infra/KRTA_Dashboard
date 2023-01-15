@@ -1,6 +1,7 @@
 {
-  "name": "@minimal/material-kit-react",
-  "author": "minimals.cc",
+  "name": "frontend",
+  "proxy": "http://127.0.0.1:5000",
+  "author": "HW Kim",
   "licence": "MIT",
   "version": "1.6.0",
   "private": false,

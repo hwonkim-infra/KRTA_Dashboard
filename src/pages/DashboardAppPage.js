@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet-async';
 import { faker } from '@faker-js/faker';
 // @mui
 import { useTheme } from '@mui/material/styles';
-import { Grid, Container, Typography } from '@mui/material';
+import { Grid, Container, Typography, Button } from '@mui/material';
 // components
 import Iconify from '../components/iconify';
 // sections
@@ -32,6 +32,9 @@ export default function DashboardAppPage() {
       <Container maxWidth="xl">
         <Typography variant="h4" sx={{ mb: 5 }}>
           Hi, Welcome back
+          <Button variant="contained" startIcon={<Iconify icon="eva:plus-fill" href="/new"   />}>
+            New File
+          </Button>
         </Typography>
 
         <Grid container spacing={3}>

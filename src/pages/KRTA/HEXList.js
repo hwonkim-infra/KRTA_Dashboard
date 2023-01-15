@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Helmet } from 'react-helmet-async';
-import { filter } from 'lodash';
+// import { filter } from 'lodash';
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { sentenceCase } from 'change-case';
 // @mui
 import { Card, Grid, Box, Table, Stack, Paper, Avatar, Button, Popover, Checkbox, TableRow, MenuItem, TableBody, TableCell, Container, Typography, IconButton, TableContainer, TablePagination, } from '@mui/material';
 import {Edit as EditIcon, Print as PrintIcon, Queue as QueueIcon, TextSnippet }  from "@mui/icons-material/";
@@ -76,6 +75,7 @@ export default function HEXList() {
 
   return (
     <>
+
       <Helmet>
         <title> HEX || 형식승인 </title>
       </Helmet>
@@ -85,7 +85,7 @@ export default function HEXList() {
           <Typography variant="h4" gutterBottom>
           Crawler Excavator
           </Typography>
-          <Button variant="contained" startIcon={<Iconify icon="eva:plus-fill" />}>
+          <Button variant="contained" startIcon={<Iconify icon="eva:plus-fill" to="/new"   />}>
             New File
           </Button>
         </Stack>
